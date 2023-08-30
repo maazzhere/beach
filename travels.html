@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        [class*="col-"]{
+            width: 100%;
+            float: left;
+            padding: 15px;
+        }
+        .row::after{
+            display: table;
+            content: '';
+            clear: both;
+        }
+        @media screen and (max-width:600px) {
+            .col-1{width: 8.33%;}
+            .col-2{width:16.66%}
+            .col-3{width: 25%;}
+            .col-4{width:33.33%}
+            .col-5{width:41.66%}
+            .col-6{width:50%;}
+            .col-7{width:58.33%}
+            .col-8{width:66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width:83.33%}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+        }
+        
+        /* tablet-size */
+        @media screen and (min-width:600px) {
+            .col-s-1{width: 8.33%;}
+            .col-s-2{width:16.66%}
+            .col-s-3{width: 25%;}
+            .col-s-4{width:33.33%}
+            .col-s-5{width:41.66%}
+            .col-s-6{width:50%;}
+            .col-s-7{width:58.33%}
+            .col-s-8{width:66.66%;}
+            .col-s-9{width: 75%;}
+            .col-s-10{width:83.33%}
+            .col-s-11{width: 91.66%;}
+            .col-s-12{width: 100%;}
+        }
+        @media screen and (min-width:768px) {
+            .col-m-1{width: 8.33%;}
+            .col-m-2{width:16.66%}
+            .col-m-3{width: 25%;}
+            .col-m-4{width:33.33%}
+            .col-m-5{width:41.66%}
+            .col-m-6{width:50%;}
+            .col-m-7{width:58.33%}
+            .col-m-8{width:66.66%;}
+            .col-m-9{width: 75%;}
+            .col-m-10{width:83.33%}
+            .col-m-11{width: 91.66%;}
+            .col-m-12{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+     <nav class="navebar">
+        <h1>L</h1>
+        <ul>
+            <li><b>ABOUT</b></li>
+            <li><b>ARTICLE</b></li>
+            <li><b>SUBSCRIBE</b></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="main-content">
+            <h1>Lava</h1>
+            <h5>BLACK SAND BEACH</h5>
+        <div class="line"></div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="row">
+        <div class="col-12 travels-card">   
+        <h1>Slow travelling</h1>
+        <p>A Travel Blog</p>
+        <div class="line2"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo placeat officiis possimus. Odit labore dolorem eveniet. Eos praesentium dolorem fuga!</p>
+    </div> 
+    <article>
+        <div class="col-12 article-card">
+            <h1>Latest articles</h1>
+            <p>OUR MOST RECENT POSTS</p>
+            <div class="line2"></div>
+        </div>
+        <div class="grid-card">
+        <div class="article-img-card">
+            <div class="col-12 col-s-4  ">
+                <img src="WhatsApp Image 2023-08-29 at 18.28.25.jpg" alt="" class="article-img">
+                <div class="article-content"><h1>TUNZA</h1>
+                <P>rugged port</P>
+                <div class="line2"></div>
+            </div>
+                </div>
+        </div>
+        <div class="article-img-card">
+            <div class="col-12 col-s-4 ">
+                <img src="WhatsApp Image 2023-08-29 at 18.28.05.jpg" alt="" class="article-img">
+                <div class="article-content-2"><h1>TIMOR</h1>
+                <P>UNTOUCHED BEACHES</P>
+                <div class="line2"></div>
+            </div>
+                </div>
+        </div>
+        <div class="article-img-card">
+            <div class="col-12 col-s-4">
+                <img src="WhatsApp Image 2023-08-29 at 18.28.17.jpg" alt="" class="article-img">
+                <div class="article-content"><h1>LOMBOOK</h1>
+                <P>ENDLESS LAVA</P>
+                <div class="line2"></div>
+            </div>
+                </div>
+        </div>
+        </div>
+        <div class="sabscribe-card">
+        <h1>Subscribe</h1>
+        <p>SIGN-UP TO OUR NEWSLETTERS</p>
+            <div class="line2"></div>
+            <div class="form">
+            <input type="text" name="email" id="email" placeholder="Your email">
+            <button>SUBMIT</button>
+        </div>
+            
+        </div>
+    </article>
+
+</div>
+    
+</main>
+<footer><h1>L</h1>
+<ul>
+    <li><b><a href="">ABOUT</a></b></li>
+    <li><b><a href="">ARTICLE</a></b></li>
+    <li><b><a href="">SUBSCRIBE</a></b></li>
+</ul></footer>
+
+</body>
+</html>
